@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    font-family: 微软雅黑;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none
+}
+
+a,
+a:hover {
+    transition: background 0.5s linear;
+    -webkit-transition: background 0.5s linear;
+    -moz-transition: background 0.5s linear;
+    -o-transition: background 0.5s linear;
+}
+
+em,
+i {
+    font-style: normal;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    border: none;
+    vertical-align: middle;
+}
+
+input,
+select,
+textarea {
+    outline: none;
+    border: none;
+    background: none;
+}
+
+textarea {
+    resize: none;
+}
+
+p {
+    line-height: 22px;
+}
+
+.mainroot {
+    height: 100%;
+    min-width: 1366px;
+}
+
+.content {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.content-header {
+    height: 56px;
+    color: #fff;
+    line-height: 50px;
+    font-size: 19px;
+    border-top: 1px solid #000;
+    background-color: #1081ff;
+    padding-left: 14px;
+}
+
+.content-sider {
+    height: 100px;
+    line-height: 100px;
+    border-bottom: 2px solid #ddd;
+    position: relative;
+    padding-left: 4%;
+}
+
+.tutor {
+    position: absolute;
+    left: 1%;
+}
+
+.role-main {
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: 2px solid #ddd;
+}
+
+.role {
+    width: 80%;
+    margin-left: 11%;
+}
+
+.role:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.role li {
+    float: left;
+    height: 100px;
+    line-height: 100px;
+    width: 22%;
+    margin-left: 10%;
+}
+
+.shezhi {
+    border-bottom: 1px solid #ddd;
+    height: 50px;
+    line-height: 50px;
+}
+
+.tk {
+    overflow-y: scroll;
+    height: 300px;
+}
+
+.juese {
+    height: 50px;
+    border-bottom: 1px solid #ddd;
+    line-height: 50px;
+    padding-left: 2%;
+}
+
+.juese span {
+    margin-left: 1%;
+}
+
+.bitch {
+    padding-left: 2%;
+}
+
+.single-line {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.savebtn {
+    display: inline-block;
+    height: 30px;
+    width: 100px;
+    background-color: #1081ff;
+    margin-top: 10px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    margin-right: 5px;
+    cursor: pointer;
+}
+

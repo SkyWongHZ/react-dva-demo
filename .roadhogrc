@@ -1,0 +1,46 @@
+{
+  "entry": ["babel-polyfill", "./src/index.js"],
+  "disableCSSModules": true,
+  "env": {
+    "development": {
+      "extraBabelPlugins": [
+          "dva-hmr",
+          "transform-runtime",
+          ["import", { "libraryName": "antd", "style": "css" }],
+          ["transform-decorators-legacy"]
+      ]
+
+    },
+    "production": {
+      "publicPath": "./",
+      "extraBabelPlugins": [
+        "transform-runtime",
+        ["import", { "libraryName": "antd", "style": "css" }],
+        ["transform-decorators-legacy"]
+      ]
+    }
+  },
+  "proxy":{
+    "/xcwrm":{
+      "target":"http://183.129.170.220:8079",
+      "changeOrigin":true
+    },
+    "/wrs":{
+      "target":"http://192.168.1.115:8079",
+      "changeOrigin":true
+    },
+    "/bigData": {
+      "target":"http://192.168.1.115:8079",
+      "changeOrigin":true
+    },
+    "/ons": {
+      "target": "http://192.168.1.115:8079",
+      "changeOrigin": true
+    },
+    "/wl": {
+      "target": "http://183.129.170.220:8079",
+      "changeOrigin": true
+    }
+  }
+}
+
