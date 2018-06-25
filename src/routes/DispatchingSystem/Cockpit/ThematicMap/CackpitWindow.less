@@ -1,0 +1,113 @@
+.custom-informationWindow {
+    width: 430px;
+    height: 500px;
+    background: rgba(3, 18, 38, .8);
+    border-radius: 10px;
+    color: #fff;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    border: 1px solid #00eaff;
+    box-shadow: 0 0 3px #fff;
+    .inner{
+        padding:0 16px 16px 16px;
+        height:450px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        &::-webkit-scrollbar {
+            width: 5px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #1D455A;
+            border-radius: 10px;
+        }
+    }
+    .close-icon {
+        font-size: 18px;
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        cursor: pointer;
+        color: #00EAFF;
+    }
+    .title-name {
+        color: #00EAFF;
+        font-size: 14px;
+        padding: 16px 16px 0 16px;
+    }
+    .panel {
+        margin-top: 10px;
+        font-size: 12px;
+        padding: 0 16px;
+        .panel-title {
+            min-height: 1px;
+            position: relative;
+            margin-bottom: 5px;
+            &:after {
+                content: '';
+                display: inline-block;
+                width: 100%;
+                height: 1px;
+                position: absolute;
+                left: 0;
+                bottom: -1px;
+                background: #032f39;
+                /* Old browsers */
+                background: -moz-linear-gradient(left, #032f39 0%, #00adc2 50%, #00adc2 50%, #032f39 100%);
+                /* FF3.6-15 */
+                background: -webkit-linear-gradient(left, #032f39 0%, #00adc2 50%, #00adc2 50%, #032f39 100%);
+                /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(to right, #032f39 0%, #00adc2 50%, #00adc2 50%, #032f39 100%);
+                /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#032f39', endColorstr='#032f39', GradientType=1);
+                /* IE6-9 */
+            }
+            span {
+                color: #fff;
+                border-radius: 3px;
+                border: 1px solid #00EAFF;
+                height: 22px;
+                line-height: 22px;
+                padding: 0 10px;
+                display: inline-block;
+            }
+        }
+        .item-label {
+            color: #00DDFF;
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .item-content {
+            padding-left: 8px;
+            margin-bottom: 5px;
+        }
+        .image-cover {
+            border-radius: 4px;
+            border: 1px solid #00EAFF;
+            margin: 0 10px;
+            height: 200px;
+            background-repeat: no-repeat no-repeat;
+            background-size: cover;
+            background-position: 50% 50%;
+            margin-top: 15px;
+            .sub-title {
+                position: relative;
+                padding-left: 12px;
+                height: 20px;
+                line-height: 20px;
+                margin-top: 5px;
+                &:before {
+                    content: '';
+                    display: inline-block;
+                    position: absolute;
+                    width: 3px;
+                    height: 15px;
+                    background-color: #00EAFF;
+                    top: 2.5px;
+                    left: 0;
+                }
+            }
+        }
+    }
+}

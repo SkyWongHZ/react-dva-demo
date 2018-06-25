@@ -1,0 +1,208 @@
+.oppsite-equipmentLedger {
+    .yk-canvas-section {
+        position: relative;
+        height: 850px;
+        .btn-container {
+            width: 200px;
+            border: 1px solid #ccc;
+            display: inline-block;
+            float: left;
+            .btn-container-title {
+                width: 100%;
+                line-height: 40px;
+                font-size: 15px;
+                background: #39455D;
+                color: #fff;
+                text-align: center;
+            }
+            .btn-block {
+                height: 182px;
+                border-top: 1px solid #ccc;
+                .btn-subtitle {
+                    text-align: center;
+                    line-height: 70px;
+                    font-size: 15px;
+                }
+                .btn-arguments-container {
+                    width: 130px;
+                    margin: auto;
+                    border-radius: 3px;
+                    .text {
+                        text-align: center;
+                        line-height: 24px;
+                        font-size: 15px;
+                    }
+                    .line {
+                        border-top: 1px solid #000;
+                        margin: 0 5px;
+                    }
+                }
+                .btn-switch-img {
+                    width: 180px;
+                    margin-left: 10px;
+                }
+                .btn-sign-img {
+                    width: 80px;
+                    margin-left: 55px;
+                }
+                .btn-text {
+                    background: #666;
+                    text-align: center;
+                    width: 130px;
+                    line-height: 50px;
+                    margin: auto;
+                    font-size: 24px;
+                }
+            }
+        }
+        .canvas-container-out {
+            display: inline-block;
+            margin-left: 15px;
+            width: 850px;
+            height: 750px;
+            float: left;
+            position: absolute;
+        }
+        .canvas-container-file {
+            display: inline-block;
+            margin-left: 15px;
+            width: 950px;
+            height: 750px;
+            float: left;
+            position: absolute;
+            z-index: 2;
+            left: 200px;
+            background-color: rgb(204, 204, 204);
+            display: none;
+            .input-file {
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                position: absolute;
+                z-index: 3;
+            }
+            &.active {
+                display: block;
+            }
+            .add-btn {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-left: -75px;
+                margin-top: -75px;
+                z-index: 2;
+                img {
+                    position: relative;
+                    left: 35px;
+                    bottom: 15px;
+                }
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+        #img-close,
+        #img-switch,
+        #img-sign {
+            display: none;
+        }
+    }
+    .yk-flowchart-edit-modal {
+        .ant-modal-body {
+            padding: 0;
+            .ant-form-item-label {
+                // text-align: center;
+            }
+            .yk-flowchart-edit-modal-col {
+                margin-top: 15px;
+                .span-label {
+                    display: inline-block;
+                    float: left;
+                    width: 120px;
+                    text-align: right;
+                    padding-right: 20px;
+                }
+                .value-container {
+                    display: inline-block;
+                    float: left;
+                    width: 200px;
+                }
+                .ant-input-lg {
+                    display: inline-block;
+                    float: left;
+                    width: 200px;
+                }
+                .value-container-double {
+                    overflow: hidden;
+                    .ant-form-item {
+                        width: 120px;
+                        display: inline-block;
+                        float: left;
+                    }
+                    .mid-span {
+                        position: relative;
+                        left: 10px;
+                    }
+                }
+            }
+            .color-list {
+                width: 20px;
+                height: 20px;
+                display: inline-block;
+                margin-left: 10px;
+                border: 1px solid #DCDCDC;
+                &.active {
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+        }
+    }
+    .all-opsite {
+        position: absolute;
+        bottom: 3%;
+        left: 32%;
+        .oppsite-control {
+            text-align: center;
+            width: 140px;
+            display: inline-block;
+            font-size: 16px;
+            img {
+                cursor: pointer;
+            }
+        }
+        .decorate {
+            width: 97%;
+            height: 57px;
+            background: #000000;
+            opacity: 0.3;
+            border-radius: 20px;
+            top: 57%;
+            position: absolute;
+            left: 3%;
+        }
+        .ant-popover {
+            width: 200px;
+        }
+    }
+    .all-secondControl {
+        font-size: 16px;
+        position: relative;
+        margin-left: 10%;
+        margin-bottom: 10%;
+        .second-lock {
+            width: 25px;
+            position: absolute;
+        }
+        span {
+            margin-left: 22%;
+        }
+    }
+    .ghost-modal {
+        .ant-modal-body {
+            .ghost-modal-content {
+                text-align: center;
+            }
+        }
+    }
+}

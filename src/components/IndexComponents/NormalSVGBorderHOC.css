@@ -1,0 +1,80 @@
+
+/*@value colors: '../../../styles/colors.css';*/
+/*@value borderBlue, contentColor, circleColor from colors;*/
+
+/*composes*/
+.circle {
+  width: 7.2px;
+  height: 7.2px;
+  position: absolute;
+}
+/*composes*/
+
+.normal {
+  background-color: transparent;
+  position: relative;
+}
+.contentBorder {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.text {
+  color: #00eaff;
+  font-size: 15px;
+  position: absolute;
+  left: 30px;
+  line-height: 18px;
+  top: 12px;
+}
+.arrowForTitle {
+  position: absolute;
+  width: 13px;
+  height: 14px;
+  left: 13px;
+  top: 14px;
+}
+.topLeftCircle {
+  composes: circle;
+  top: -3px;
+  left: -3px;
+}
+.topRightCircle {
+  composes: circle;
+  top: -3px;
+  right: -3px;
+}
+.bottomLeftUpCircle {
+  composes: circle;
+  bottom: 10px;
+  left: -3px;
+}
+.bottomLeftDownCircle {
+  composes: circle;
+  left: 10px;
+  bottom: -3px;
+}
+.bottomRightUpCircle {
+  composes: circle;
+  bottom: 10px;
+  right: -3px;
+}
+.bottomRightDownCircle {
+  composes: circle;
+  right: 10px;
+  bottom: -3px;
+}
+.turnToLeftTriangle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 18.5px;
+  height: 18.5px;
+}
+.turnToRightTriangle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 18.5px;
+  height: 18.5px;
+}

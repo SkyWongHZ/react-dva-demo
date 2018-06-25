@@ -1,0 +1,109 @@
+.filtrateContainer {
+    position: relative;
+    background: #051A2A;
+    margin: 6px 0;
+    height: 70px;
+    border: 1px solid #035470;
+    border-radius: 3px;
+}
+
+.borderSmall {
+    border-width: 2px;
+    width: 12px;
+    height: 12px;
+    display: block;
+    position: absolute;
+    border-color: #00CCFF;
+}
+
+.borderSmallLeftTop {
+    border-left-style: solid;
+    border-top-style: solid;
+    left: -2px;
+    top: -2px;
+    border-top-left-radius: 4px;
+}
+
+.borderSmallRightTop {
+    border-right-style: solid;
+    border-top-style: solid;
+    right: -2px;
+    top: -2px;
+    border-top-right-radius: 4px;
+}
+
+.borderSmallLeftBottom {
+    border-left-style: solid;
+    border-bottom-style: solid;
+    left: -2px;
+    bottom: -2px;
+    border-bottom-left-radius: 4px;
+}
+
+.borderSmallRightBottom {
+    border-right-style: solid;
+    border-bottom-style: solid;
+    right: -2px;
+    bottom: -2px;
+    border-bottom-right-radius: 4px;
+}
+
+//覆盖ant样式 选择框
+.customFormItem {
+    margin-top: 15px;
+    width: 240px;
+    label {
+        color: #fff;
+    }
+    .ant-select-selection,
+    .ant-calendar-picker-input {
+        background-color: #051A2A;
+        border-color: #00CCFF;
+        color: #fff;
+    }
+    .ant-select-selection-selected-value {
+        color: #fff;
+    }
+    .ant-select-arrow:before {
+        color: #00CCFF;
+    }
+    .ant-calendar-range-picker-separator {
+        color: #fff;
+    }
+    .ant-calendar-picker-icon:after {
+        color: #00CCFF;
+    }
+    .ant-calendar-picker:hover .ant-calendar-picker-clear {
+        background-color: #051A2A;
+        color: #00CCFF;
+    }
+    .ant-calendar-picker:hover .ant-calendar-picker-input:not(.ant-input-disabled) {
+        border-color: #00CCFF;
+    }
+}
+
+.customOption {
+    .ant-select-dropdown-menu-item {
+        background: #051A2A;
+        color: #fff;
+    }
+    .ant-select-dropdown-menu-item:hover {
+        background: #051A2A;
+        color: #fff;
+    }
+}
+
+.customButton {
+    color: #00CCFF;
+    border-color: #00CCFF;
+    width: 55px;
+    position: relative;
+    top: 15px;
+    left: 20px;
+    box-shadow: 0 0 15px rgba(0, 204, 255, .6);
+}
+
+.customButton:hover {
+    color: #00CCFF;
+    border-color: #00CCFF;
+}

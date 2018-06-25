@@ -1,0 +1,126 @@
+
+/*@value colors: '../../../styles/colors.css';*/
+/*@value borderBlue, contentColor, circleColor from colors;*/
+
+/*composes*/
+.circle {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+}
+/*composes*/
+
+.marginTop20 {
+  margin-top: 20px;
+}
+.normal {
+  background-color: transparent;
+  width: 520px;
+  height: 303px;
+  position: relative;
+}
+.title {
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+  height: 33px;
+}
+.arrow {
+  position: absolute;
+  height: 33px;
+}
+.arrow1 {
+  width: 91px;
+  composes: arrow;
+}
+.arrow2 {
+  width: 106px;
+  composes: arrow;
+}
+.arrow3 {
+  width: 125px;
+  composes: arrow;
+}
+.arrow4 {
+  width: 134px;
+  composes: arrow;
+}
+.contentBorder {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.polylineForArrow {
+  position: absolute;
+  height: 35.6px;
+  left: -1px;
+  top: -1px;
+}
+.polylineForArrow1 {
+  composes: polylineForArrow;
+  width: 78px;
+}
+.polylineForArrow2 {
+  composes: polylineForArrow;
+  width: 93px;
+}
+.polylineForArrow3 {
+  composes: polylineForArrow;
+  width: 112px;
+}
+.polylineForArrow4 {
+  composes: polylineForArrow;
+  width: 121px;
+}
+.text {
+  color: #00eaff;
+  font-size: 18px;
+  position: absolute;
+  left: 30px;
+  line-height: 18px;
+  top: 7.5px;
+}
+.arrowForTitle {
+  position: absolute;
+  width: 13px;
+  height: 14px;
+  left: 13px;
+  top: 9.5px;
+}
+.smallCircle {
+  position: absolute;
+  width: 7.2px;
+  height: 7.2px;
+  left: -3.6px;
+  top: 29.4px;
+}
+.topRightCircle {
+  composes: circle;
+  top: -6px;
+  right: -6px;
+}
+.bottomLeftCircle {
+  composes: circle;
+  left: 8px;
+  bottom: -6px;
+}
+.bottomRightCircle {
+  composes: circle;
+  right: 8px;
+  bottom: -6px;
+}
+.turnToLeftTriangle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 18.5px;
+  height: 18.5px;
+}
+.turnToRightTriangle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 18.5px;
+  height: 18.5px;
+}

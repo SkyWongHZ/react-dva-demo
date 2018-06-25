@@ -1,0 +1,7 @@
+.close {
+  color: #00ccff;
+  cursor: pointer;
+}
+.close > i {
+  font-size: 22px;
+}

@@ -1,0 +1,49 @@
+.alarmGraphic-container {
+    height: 382px;
+    .alarmGraphic-list {
+        &:after {
+            content: ' ';
+            display: block;
+            clear: both;
+        }
+        .last-month {
+            float: left;
+            width: 30%;
+            padding-top: 2.5%;        
+            position: relative; 
+            &:nth-child(1){
+               height: 338px;
+               width: 38%;
+               .alarmGraphic-show{
+                    position: absolute;
+                    display: inline-block;
+                    top: 134px;
+                    left: 292px;
+                }
+               padding-top: 7%;
+               padding-left: 10%;
+            }
+            .alarmGraphic-show{
+                position: absolute;
+                display: inline-block;
+                top: 49px;
+                left: 130px;
+                .first-show{
+                    font-size: 16px;
+                    font-weight: bold;
+                }
+                .second-show{
+                    font-size: 34px;
+                    font-weight: bold;
+                }
+                .three-show{
+                    color:#02BD3B;
+                    span{
+                        color:#777777;
+                    }
+                }
+            }
+        }
+     
+    }
+}

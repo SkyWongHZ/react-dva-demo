@@ -1,0 +1,54 @@
+.role-main-content {
+    .custom-table {
+        display: block;
+        .ant-table {
+            .ant-table-thead>tr>th {
+                border-right: 1px solid #ffffff;
+                background-color: #C4E7FF;
+                text-align: center;
+                height: 56px;
+            }
+            .ant-table-tbody {
+                .ant-table-row {
+                    td {
+                        text-align: center;
+                        border-bottom: 0;
+                        padding: 8px;
+                        &:first-child {
+                            text-align: left;
+                        }
+                    }
+                    &.ant-table-row-level-0 {
+                        td {
+                            border-top: 1px solid #D6ECF6;
+                        }
+                        &:first-child {
+                            td {
+                                border-top: 0;
+                            }
+                        }
+                    }
+                }
+            }
+            .oper-btns {
+                i {
+                    padding-left: 10px;
+                    cursor: pointer;
+                }
+                .edit-btn {
+                    color: #3996FF;
+                    position: relative;
+                    top: -1px;
+                    padding-right: 10px;
+                }
+                .add-btn {
+                    color: #31E0A0;
+                    border-left: 1px solid #BFBFBF;
+                }
+                .close-btn {
+                    color: #FF242E;
+                }
+            }
+        }
+    }
+}

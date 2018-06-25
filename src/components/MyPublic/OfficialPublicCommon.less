@@ -1,0 +1,488 @@
+@import "../../less/vendor-prefixes";
+@import "../../less/variables";
+
+.wp-btn-search {
+  background-color: #08AF22;
+  color: #FFFFFF;
+  border-color: #08AF22;
+}
+
+.wp-H {
+  height: 100%;
+}
+
+// 筛选条件
+.wp-components-bgc {
+  background-color: @white;
+  border-radius: 6px;
+  height: 42px;
+  margin: @base-margin;
+  .ant-form-item-control-wrapper {
+    margin-top: 5px;
+  }
+  .wp-btn-row {
+    width: auto !important;
+    .ant-form-item-control-wrapper {
+      margin-top: 0;
+    }
+  }
+  .ant-form-item-control {
+    line-height: 0;
+  }
+  .ant-form {
+    line-height: 42px;
+    height: 100%;
+  }
+  .box-shadow(@base-shadow);
+  border: @base-border;
+  .ant-form-item {
+    vertical-align: middle;
+  }
+  .ant-form-item-label {
+    width: @label-w;
+  }
+  .ant-row {
+    width: @ant-row-w;
+  }
+
+  .ant-calendar-picker, .ant-select-selection--single {
+    // margin-top: 5px;
+  }
+  .range-picker {
+    width: 280px;
+    .ant-form-item-control-wrapper {
+      width: 185px;
+    }
+  }
+  .month-picker{
+    width: 200px;
+  }
+  .ant-form-item {
+    margin: 0;
+  }
+}
+
+.wp-btn{
+  // background-color: @base-color !important;
+  height: 22px;
+  .box-shadow(0 0 2px rgba(0, 0, 0, 0.2));
+  color: rgba(255, 255, 255, 1);
+  border-color: #1081ff;
+  background-color: #1081ff ;
+}
+
+.wp-clear-btn{
+  .box-shadow(0 0 2px rgba(0, 0, 0, 0.2));
+  height: 23px;
+  background-color: #FFFFFF !important;
+  color: #666 !important;
+  border: 1px solid #c9c9c9 !important;
+}
+
+// 表格容器
+.wp-container {
+  border: @base-border;
+  overflow: hidden;
+  .box-shadow(@base-shadow);
+  .border-radius(@base-radius);
+  // height: calc(~"100vh - 123px");
+  margin: @base-margin;
+  background-color: @white;
+  .wp-container-content{
+    .ant-pagination{
+      // margin-right: 16px;
+    }
+  }
+}
+
+.wp-container-header {
+  border-bottom: 1px solid rgba(196, 196, 196, 1);
+  height: auto;
+  line-height: 40px;
+  i {
+    color: @base-color
+  }
+  span {
+    cursor: pointer;
+  }
+  .wp-line {
+    width: 1px;
+    margin-left: 10px;
+    border-right: 1px solid rgba(196, 196, 196, 1);
+  }
+  .wp-container-header-subtitle{
+    padding-left: 20px;
+  }
+}
+
+// table 样式
+.wp-table {
+  .ant-table-title{
+    line-height: 6px;
+    background-color: #C4E7FF;
+    h2{
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+  .ant-checkbox-indeterminate{
+    background-color: @base-color !important;
+  }
+  .ant-checkbox-checked{
+    .ant-checkbox-inner{
+      // background-color: @base-color ;
+    }
+    .ant-checkbox-inner:visited{
+      // border-color: @base-color !important;
+    }
+  }
+  .ant-table-fixed-right{
+    .ant-table-header{
+      background-color: #d0f1f2;
+    }
+  }
+  .ant-table-tbody {
+    .wp-myTable {
+      background-color: #ffffff;
+      text-align: center;
+      color: #333333;
+    }
+    .ant-table-row{
+      //height: 40px !important;
+    }
+  }
+  .ant-table-thead {
+    .wp-myTable {
+      background-color: @light-blue !important;
+      text-align: center !important;
+    }
+  }
+  .ant-table-thead{
+    .ant-table-selection-column{
+      background-color: #C4E7FF !important;
+    }
+    > tr > th{
+      padding: 0
+    }
+  }
+  .ant-table-bordered .ant-table-thead > tr > th{
+    border-right: 1px solid @white;
+    background-color: #C4E7FF;
+    text-align: center;
+    height: 56px;
+  }
+  .ant-table-bordered .ant-table-tbody > tr > td{
+    position: relative;
+  }
+  .ant-table-bordered .ant-table-tbody{
+    .wp-myTable{
+      border-right: 1px solid @white;
+    }
+    .ant-table-selection-column{
+      border-right: 1px solid #efefef ;
+    }
+  }
+  .ant-checkbox-indeterminate{
+    &:focus{
+      border: 1px solid @base-color;
+    }
+    .ant-checkbox-inner{
+      // background-color: @base-color;
+      // border: 1px solid @base-color;
+    }
+  }
+}
+
+// table border
+.ant-table-bordered .ant-table-thead > tr > th, .ant-table-bordered .ant-table-tbody > tr > td{
+  text-align: center;
+}
+//.ant-table-bordered .ant-table-thead > tr > th{
+//  border-bottom: 1px solid @white !important;
+//}
+// 模态框
+.wp-modal {
+  .ant-modal-content {
+    width: 100%;
+    // height: 442px;
+    overflow: hidden;
+  }
+  .ant-form {
+    line-height: 42px;
+    height: 100%;
+  }
+  .ant-calendar-picker {
+    width: 100%;
+  }
+  .ant-select-selection--single, rangerPicker {
+    // margin-top: 4px;
+  }
+  .ant-row {
+    // width: 265px;
+    // margin-left: 50px;
+    // margin-top: 10px;
+  }
+  .ant-modal-header {
+    // background-color: #1081ff;
+    background: linear-gradient(to right, #1697FB , #01C7EA);
+    height: 42px;
+  }
+  .wp-tab {
+    border-bottom: 1px solid #C4E7FF ;
+    height: 24px;
+    width: 830px;
+  }
+  .wp-tab-header {
+    height: 100%;
+    width: 64px;
+    text-align: center;
+    line-height: 200%;
+    color: #fff;
+    background-color: #0FA4F3;
+    .border-top-radius(@base-radius);
+  }
+  .ant-modal-title{
+    color:#fff;
+  }
+  .ant-form-item{
+    width: 100%;
+  }
+  .endLabel{
+    position: absolute;
+    left: 100%;
+    width: auto;
+    white-space: nowrap;
+    margin-left: 15px;
+  }
+}
+.wp-info-modal {
+  .ant-modal-content {
+    width: 650px;
+    max-height: 600px;
+    overflow: hidden;
+  }
+  .ant-modal-header {
+    background-color: @light-blue;
+    height: 42px;
+  }
+  .wp-tab {
+    border-bottom: 1px solid @light-blue;
+    height: 24px;
+    width: 830px;
+  }
+  .wp-tab-header {
+    height: 100%;
+    width: 64px;
+    text-align: center;
+    line-height: 200%;
+    color: #1d1d1d;
+    background-color: @light-blue;
+    .border-top-radius(@base-radius);
+  }
+}
+
+.wp-myModal-form {
+  margin: 4px auto;
+  .ant-input-number {
+    width: 100%;
+  }
+}
+// 分页样式
+.wp-page{
+  .ant-pagination-item-active{
+    background-color: #108ee9;
+    &:focus{
+      background-color:#108ee9;
+    }
+  }
+}
+
+
+.xnw-components-bgc{
+  overflow: hidden;
+  box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+  .xnw-components-bg{
+    border-radius:6px;
+    border:1px solid #ffffff;
+    background: #FFFFFF;
+    position: relative;
+    z-index: 333;
+  }
+}
+.xnw-component-span{
+  position: absolute;
+  right:15px;
+  cursor: pointer;
+  top:-4px;
+  font-size: 35px;
+  transition:all .3s linear ;
+}
+
+.xnw-components-bgc-active{
+  overflow: visible;
+  box-shadow: none;
+  .xnw-components-bg{
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  .xnw-component-span{
+    transform: rotateZ(90deg);
+  }
+}
+
+.ant-spin-container{
+
+}
+.xnw-line{
+  height: 1px;
+  display: block;
+  width:100%;
+  background: rgba(196, 196, 196, 1);
+  position: relative;
+  top:-5px;
+  border-right: 1px solid rgba(196, 196, 196, 1);
+}
+
+.kk{
+  height: 60px;
+  color: red;
+  line-height: 60px;
+}
+.roggue{
+  text-align: center;
+}
+.ZERO{
+  width: 136px;
+  height: 32px !important;
+  border-radius: 14px;
+  background:rgba(15,164,243,1)!important;
+}
+
+// 可编辑tablecell
+.yk-editable-cell{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  bottom: 50%;
+  margin-bottom: -9px;
+
+  .editable-cell-icon:hover,
+  .editable-cell-icon-check:hover {
+    color: #108ee9;
+  }
+}
+.sky-checkbox{
+  width: 23% !important;
+  float: left;
+}
+.gaode-map{
+  border:1px solid #CCCCCC;
+  height: 80px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+.sky-ch{
+  margin-left: 16%;
+}
+.sky-range-picker{
+  width: 200px !important;
+}
+
+.report-day{
+  margin-top: 10px;
+}
+
+.sky-components-filtrate{
+  width: 99%;
+  margin-left: .5%;
+  height: 52px;
+  box-sizing: border-box;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 0 8px #a9a9a9;
+  padding: 10px 0px;
+  .auto-complete {
+    width: 200px;
+    .ant-select-auto-complete {
+      display: inline-block;
+    }
+  }
+  .ant-form-inline{
+    .ant-form-item{
+      width: 180px;
+      margin-right: 20px;
+    }
+    @media only screen and (max-width: 1400px) {
+        .ant-form-item{
+          width: 160px;
+          margin-right: 20px;
+        }
+    }
+    .yk-btn-row{
+      width: auto;
+      float: right;
+      margin-right: 0px;
+    }
+  }
+  .yk-filtrate-tabs{
+    // margin-left: -20%;
+    .ant-tabs-bar{
+      border: none;
+    }
+    .ant-tabs-tab:last-child{
+      padding-bottom: 14px;
+    }
+  }
+}
+.inputWidth{
+  width: 66%;
+}
+.tognyi{
+  margin-top: 10px;
+}
+
+.sky-modal-table{
+  width:524px;
+  .ant-table{
+    height: 250px;
+    overflow-y: scroll;
+    margin-top: 19px;
+  }
+}
+.custom-table{
+  display: inline-block;
+  .ant-select {
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    color: rgba(0, 0, 0, 0.65);
+    font-size: 12px;
+    margin-right: 10px;
+  }
+}
+.custon-input{
+  display: inline-block;
+  width: 10%;
+  margin-right: 10px;
+}
+.wp-myModal-form{
+  .ant-tabs{
+    width: 63%;
+  }
+}
+.skywong-modal-table{
+  width:524px;
+  .ant-table{
+    height: 250px;
+    overflow-y: scroll;
+    margin-top: 19px;
+  }
+  .ant-input-group-wrapper{
+    width: 27%;
+    margin-top: 1%;
+  }
+  .ant-select{
+    margin-right: 1%;
+  }
+}

@@ -1,0 +1,87 @@
+.mapSelector {
+    
+        transition: 1s;
+        position: absolute;
+        right: 1%;
+        top: 50%;
+        background-color: hsla(0, 0%, 100%, .1);
+       /*  height: 274px;
+        overflow-y: scroll; */
+        .map-selector-bar {
+            .map-selector-header {
+                height: 22px;
+                text-align: center;
+                white-space: nowrap;
+                color: #29e3ff;
+                font-size: 14px;
+                cursor: pointer;
+                transition: 1s;
+                i {
+                    margin-right: 5px;
+                    font-size: 14px;
+                }
+            }
+            .map-selector-body {
+               /*  max-height: 545px; */
+                max-height: 260px;
+                overflow-x: hidden;
+                overflow-y: auto;
+                &::-webkit-scrollbar {
+                    width: 5px;
+                    border-width: 0;
+                    background-color: transparent;
+                }
+                &::-webkit-scrollbar-thumb {
+                    height: 5px;
+                    background: rgba(0, 120, 165, 0.75);
+                    border-radius: 10px;
+                }
+                .map-selector-item {
+                    text-align: center;
+                    padding: 10px 0;
+                    &.map-selector-item-active {
+                        background-color: rgba(13, 20, 33, .6);
+                    }
+                    &:last-child {
+                        border-top-right-radius: 6px;
+                        border-bottom-right-radius: 6px;
+                    }
+                    .map-selector-item-image {
+                        width: 36px;
+                        height: 36px;
+                        cursor: pointer;
+                    }
+                    .map-selector-item-name {
+                        color: #fff;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        .map-selector-expand {
+            height: 22px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            text-align: center;
+            color: #29e3ff;
+            transform: rotate(180deg);
+            background-color: hsla(0, 0%, 100%, .1);
+            cursor: pointer;
+            transition: 1s;
+            i {
+                font-size: 14px;
+            }
+        }
+    
+}
+
+.maxMapSelector {
+  
+        .map-selector-bar {
+            .map-selector-body {
+                max-height: 780px;
+            }
+        }
+   
+}

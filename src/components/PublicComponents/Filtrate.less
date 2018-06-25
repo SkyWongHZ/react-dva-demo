@@ -1,0 +1,115 @@
+@value colors: '../styles/colors.css';
+@value borderBlue, backgroundColor, fontColorBlue, borderBlueBright, fontColorWhite, backgroundColorDull from colors;
+
+.container{
+  position: relative;
+  background: backgroundColorDull;
+  margin: 12px 0;
+  height: 65px;
+  border: 1px solid borderBlue;
+  border-radius: 3px;
+}
+
+.borderSmall{
+  border-width: 2px;
+  width: 12px;
+  height: 12px;
+  display: block;
+  position: absolute;
+  border-color: borderBlueBright;
+}
+
+.borderSmallLeftTop{
+  composes:borderSmall;
+  border-left-style: solid;
+  border-top-style: solid;
+  left: -2px;
+  top: -2px;
+  border-top-left-radius: 4px;
+}
+.borderSmallRightTop{
+  composes:borderSmall;
+  border-right-style: solid;
+  border-top-style: solid;
+  right: -2px;
+  top: -2px;
+  border-top-right-radius: 4px;
+}
+.borderSmallLeftBottom{
+  composes:borderSmall;
+  border-left-style: solid;
+  border-bottom-style: solid;
+  left: -2px;
+  bottom: -2px;
+  border-bottom-left-radius: 4px;
+}
+.borderSmallRightBottom{
+  composes:borderSmall;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  right: -2px;
+  bottom: -2px;
+  border-bottom-right-radius: 4px;
+}
+
+//覆盖ant样式 选择框
+.customFormItem {
+  margin-top: 15px;
+ 
+    label {
+      color: fontColorWhite;
+    }
+    .ant-select-selection, .ant-calendar-picker-input{
+      background-color: backgroundColorDull;
+      border-color: borderBlueBright;
+      color: fontColorWhite;
+    }
+    .ant-select-selection-selected-value{
+      color: #fff;
+    }
+    .ant-select-arrow:before{
+      color: fontColorBlue;
+    }
+    .ant-calendar-range-picker-separator{
+      color: fontColorWhite;
+    }
+    .ant-calendar-picker-icon:after{
+      color: fontColorBlue;
+    }
+    .ant-calendar-picker:hover .ant-calendar-picker-clear{
+      background-color: backgroundColorDull;
+      color: fontColorBlue;
+    }
+    .ant-calendar-picker:hover .ant-calendar-picker-input:not(.ant-input-disabled){
+      border-color: borderBlueBright;
+    }
+  
+}
+
+.customOption {
+  
+    .ant-select-dropdown-menu-item{
+      background: backgroundColorDull;
+      color: fontColorWhite;
+    }
+    .ant-select-dropdown-menu-item:hover{
+      background: backgroundColorDull;
+      color: fontColorWhite;
+    }
+  
+}
+
+.customButton{
+  color: fontColorBlue;
+  border-color: borderBlueBright;
+  width: 55px;
+  position: relative;
+  top: 15px;
+  left: 20px;
+  box-shadow:0 0 15px rgba(0, 204, 255,.6);
+}
+
+.customButton:hover{
+  color: fontColorBlue;
+  border-color: borderBlueBright;
+}

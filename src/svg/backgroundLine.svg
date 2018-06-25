@@ -1,0 +1,17 @@
+<svg
+  width="1920"
+  height="1080"
+  viewBox="0 0 1920 1080"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <rect width="1920" height="1080"
+        style="fill:none;stroke-width:0"/>
+  <polyline
+    points="31,124.4 15,142.4 15,1027.5 31,1045.5 "
+    style="fill:none;stroke:#0078a5;stroke-width:2"
+  />
+  <polyline
+    points="1888,124.4 1903,142.4 1903,1027.5 1888,1045.5 "
+    style="fill:none;stroke:#0078a5;stroke-width:2"
+  />
+</svg>

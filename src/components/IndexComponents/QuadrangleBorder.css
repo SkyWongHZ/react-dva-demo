@@ -1,0 +1,50 @@
+@value colors: '../styles/colors.css';
+@value borderBlueBright from colors;
+.normal {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.borderSmall{
+  border-width: 2px;
+  border-color: borderBlueBright;
+  width: 12px;
+  height: 12px;
+  display: block;
+  position: absolute;
+}
+
+.borderSmallLeftTop{
+  composes:borderSmall;
+  border-left-style: solid;
+  border-top-style: solid;
+  left: -2px;
+  top: -2px;
+  border-top-left-radius: 4px;
+}
+.borderSmallRightTop{
+  composes:borderSmall;
+  border-right-style: solid;
+  border-top-style: solid;
+  right: -2px;
+  top: -2px;
+  border-top-right-radius: 4px;
+}
+.borderSmallLeftBottom{
+  composes:borderSmall;
+  border-left-style: solid;
+  border-bottom-style: solid;
+  left: -2px;
+  bottom: -2px;
+  border-bottom-left-radius: 4px;
+}
+.borderSmallRightBottom{
+  composes:borderSmall;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  right: -2px;
+  bottom: -2px;
+  border-bottom-right-radius: 4px;
+}

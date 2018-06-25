@@ -1,0 +1,61 @@
+.boxBlockz {
+    width: 575px;
+    height: 300px;
+    background-color: rgba(4, 13, 18, .4);
+    color: #fff;
+    border: 1px solid #035470;
+    margin-bottom: 26px;
+    margin-right: 15px; // margin-left: 3px;
+    margin-left: 69%; // overflow: hidden;
+    .content-alarm {
+        .realTimeList {
+            padding: 0 0 0 30px; // overflow-y: scroll;
+            // height: 240px;
+            li {
+                position: relative;
+                overflow: hidden;
+                margin-top: 10px;
+                .bottom-border {
+                    position: absolute;
+                    width: 516px;
+                    height: 1px;
+                    bottom: 0;
+                    left: 0;
+                }
+                .water {
+                    width: 35px;
+                    height: 35px;
+                    float: left;
+                    margin-top: 5px;
+                }
+                .right-content {
+                    float: left;
+                    margin-bottom: 10px;
+                    P {
+                        width: 480px;
+                        position: relative;
+                        span {
+                            color: #BABABA;
+                            font-size: 12px;
+                            margin-left: 3px;
+                            line-height: 20px;
+                        }
+                        .alarm {
+                            margin-left: 10px;
+                            color: #FEFEFE;
+                            font-size: 16px;
+                        }
+                        .rain {
+                            color: #FF3C45;
+                        }
+                        .time {
+                            position: absolute;
+                            top: 0;
+                            right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

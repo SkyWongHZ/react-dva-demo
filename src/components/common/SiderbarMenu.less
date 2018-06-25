@@ -1,0 +1,57 @@
+.fwq-sidebar-menu {
+  position: relative;
+  padding-bottom: 0;
+  .ant-layout-sider-children {
+    z-index: 99;
+    position: relative;
+    .ant-menu {
+      height: 100%;
+    }
+  }
+  .ant-layout-sider-trigger {
+    top: calc(~'50% - 20px');
+  }
+  .menu-trigger-fold, .menu-trigger-unfold {
+    position: absolute;
+    left: 173px;
+    top: calc(~'50% - 20px');
+    width: 60px;
+    height: 40px;
+    border-radius: 12px;
+    background-color: rgba(0,0,0,0.4);
+    //transition: left 0.2s;
+    transition: all 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
+    cursor: pointer;
+    padding-left: 20px;
+    text-align: center;
+    line-height: 40px;
+    i {
+      color: #fff;
+      font-size: 20px;
+    }
+    &:hover {
+      left: 204px;
+    }
+  }
+  .menu-trigger-fold {
+    left: 13px;
+    &:hover {
+      left: 44px;
+    }
+  }
+
+
+  .ant-menu-inline-collapsed > .ant-menu-submenu > .ant-menu-submenu-title {
+    width: 48px;
+    border-bottom-width: 0;
+  }
+  .ant-menu-inline-collapsed>li:before {
+    content: "";
+    width: 44px;
+    height: 1px;
+    background-color: hsla(0,0%,100%,.07);
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+  }
+}

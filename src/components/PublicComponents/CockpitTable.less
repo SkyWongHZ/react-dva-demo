@@ -1,0 +1,130 @@
+.cockpitTable {
+    float: left;
+    margin-top: -27px;
+    
+        .ant-table-content {
+            .ant-table-body {
+                >table {
+                    .ant-table-thead {
+                        line-height: 26px;
+                        box-shadow: 0px 0px 4px rgba(9, 193, 216, 1) inset;
+                        border-radius: 4px;
+                        &:before {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 10px;
+                            height: 10px;
+                            border: 2px hidden #0cf;
+                            border-left-style: solid;
+                            border-top-style: solid;
+                            border-top-left-radius: 4px;
+                        }
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            width: 10px;
+                            height: 10px;
+                            border: 2px hidden #0cf;
+                            border-right-style: solid;
+                            border-top-style: solid;
+                            border-top-right-radius: 4px;
+                        }
+                        >tr {
+                            >th {
+                                padding: 0 8px;
+                                color: #0be5ff;
+                                background-color: transparent;
+                                text-align: center;
+                                border-width: 0;
+                            }
+                        }
+                    }
+                    .ant-table-tbody {
+                        line-height: 36px;
+                        &:before {
+                            content: '';
+                            position: absolute;
+                            top: 17px;
+                            left: 0;
+                            width: 10px;
+                            height: 10px;
+                            border: 2px hidden #0cf;
+                            border-left-style: solid;
+                            border-bottom-style: solid;
+                            border-bottom-left-radius: 4px;
+                        }
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            top: 17px;
+                            right: 0;
+                            width: 10px;
+                            height: 10px;
+                            border: 2px hidden #0cf;
+                            border-right-style: solid;
+                            border-bottom-style: solid;
+                            border-bottom-right-radius: 4px;
+                        }
+                        >tr {
+                            >td {
+                                padding: 0 8px;
+                                color: #fff;
+                                background-color: transparent;
+                                text-align: center;
+                                border-bottom: 1px solid #00eaff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .ant-table-pagination.ant-pagination {
+            text-align: center;
+            float: none;
+            margin-bottom: 0;
+            .ant-pagination-item-link {
+                background-color: transparent;
+                color: #00eaff;
+                border-width: 0;
+            }
+            .ant-pagination-item {
+                background-color: transparent;
+                color: #00eaff;
+                border-width: 0;
+                >a {
+                    color: #fff;
+                }
+            }
+            .ant-pagination-item-active {
+                background-color: transparent;
+                color: #00eaff;
+                border-width: 0;
+                >a {
+                    color: #00eaff;
+                }
+            }
+            .ant-pagination-jump-prev:after,
+            .ant-pagination-jump-next:after {
+                color: #fff;
+            }
+        }
+        .ant-table-title {
+            position: relative;
+            top: 1px;
+            border-radius: 4px 4px 0 0;
+            color: #0be5ff;
+            text-align: center;
+            font-size: 17px;
+        }
+        .ant-table {
+            width: 573px;
+        }
+        .ant-spin-container{
+            margin-top: 10px;
+        }
+    
+}

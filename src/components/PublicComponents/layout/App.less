@@ -1,0 +1,70 @@
+@import "../../../less/variables";
+
+    .wp-layout {
+        height: 100%;
+        min-width: 1366px;
+        .ant-layout-header {
+            height: 56px;
+            color: #ffffff;
+            line-height: @top-nav-h;
+            font-size: 19px;
+            border-top: 1px solid black; // background-color: @black;
+            background-color: #1081ff;
+            padding-left: 14px;
+        }
+        .ant-layout-content {
+            background-color: #ffffff;
+            width: calc(~'100% - 224px');
+            overflow-y: hidden;
+        }
+        .ant-layout-sider {
+            // flex: 0 0 224px !important;
+            // max-width: 224px !important;
+            // min-width: 224px !important;
+            // width: 224px !important;
+            background-color: #283142;
+            border-top: 1px solid black;
+            overflow: hidden;
+        }
+        .ant-layout-sider-trigger,
+        .ant-menu-dark,
+        .ant-menu-dark .ant-menu-sub {
+            // background-color: @black;
+            // width: 224px !important;
+            background-color: #283142;
+        }
+        .ant-menu-submenu-title {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .wp-logo-div {
+            img {
+                margin-top: 12px;
+                float: left;
+                width: 30px;
+            }
+            .wp-cockpit {
+                display: inline-block;
+                float: right;
+                font-size: 12px;
+                color: #FFFFFF;
+            }
+            .wp-cockpit-icon {
+                display: inline-block;
+                float: right;
+                margin-right: 6px;
+                font-size: 12px;
+                color: #FFFFFF;
+            }
+        }
+    }
+    .ant-dropdown-menu.wp-down {
+        background-color: #000000;
+        margin-top: 10px;
+        .ant-dropdown-menu-item-active {
+            background-color: dimgray;
+        }
+        i,
+        span {
+            color: #FFFFFF;
+        }
+    }

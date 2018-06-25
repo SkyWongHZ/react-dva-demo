@@ -1,0 +1,151 @@
+.SituationAwarenessContainer {
+    .chart-list-container {
+        margin: 10px 25px 15px 25px;
+        .chart-list {
+            display: inline-block;
+            margin-right: 25px;
+        }
+        .chart-list:nth-child(4n) {
+            margin-right: 0;
+        }
+    }
+    .detail-table {
+        position: relative;
+        height: 260px;
+        .detail-subtitle {
+            position: absolute;
+            top: 10px;
+            left: 15px;
+        }
+        .detail-table-back {
+            position: absolute;
+            right: 30px;
+            top: -35px;
+            border: 1px solid #09C1D8;
+            border-radius: 3px;
+            line-height: 24px;
+            padding: 0 6px;
+            cursor: pointer;
+            color: #00EAFF;
+        }
+        .container {
+            float: right;
+            position: relative;
+        }
+        .contentContainer {
+            position: absolute;
+            width: 100%;
+        }
+        .contentNav {
+            position: relative;
+            margin: 0 20px;
+            line-height: 30px;
+            border: 1px solid #035470;
+            border-radius: 4px;
+        }
+        .contentList {
+            display: inline-block;
+            color: #00CCFF;
+            text-align: center;
+            i {
+                margin-right: 5px;
+            }
+        }
+        .dataList {
+            display: inline-block;
+            color: #fff;
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            float: left;
+            max-height: 40px;
+        }
+        .dataNavActive {
+            line-height: 40px;
+            border-bottom: 1px solid #07596C;
+            margin: 0 20px;
+            overflow: hidden;
+            background: -webkit-linear-gradient(left, #051A2B, #0078A5, #051A2B);
+            background: -o-linear-gradient(right, #051A2B, #0078A5, #051A2B);
+            background: -moz-linear-gradient(right, #051A2B, #0078A5, #051A2B);
+            background: linear-gradient(to right, #051A2B, #0078A5, #051A2B);
+        }
+        .borderSmall {
+            border-width: 2px;
+            width: 10px;
+            height: 10px;
+            display: block;
+            position: absolute;
+            border-color: #00EAFF;
+            &.borderSmallLeftTop {
+                border-left-style: solid;
+                border-top-style: solid;
+                left: 0;
+                top: 0;
+                border-top-left-radius: 4px;
+            }
+            &.borderSmallRightTop {
+                border-right-style: solid;
+                border-top-style: solid;
+                right: 0;
+                top: 0;
+                border-top-right-radius: 4px;
+            }
+            &.borderSmallLeftBottom {
+                border-left-style: solid;
+                border-bottom-style: solid;
+                left: 0;
+                bottom: 0;
+                border-bottom-left-radius: 4px;
+            }
+            &.borderSmallRightBottom {
+                border-right-style: solid;
+                border-bottom-style: solid;
+                right: 0;
+                bottom: 0;
+                border-bottom-right-radius: 4px;
+            }
+        }
+        .table-pagination {
+            position: absolute;
+            right: 20px;
+            bottom: 15px;
+            .ant-pagination-item {
+                background-color: rgba(255, 255, 255, 0);
+            }
+            .ant-pagination-item a {
+                color: #00D6EA;
+            }
+            .ant-pagination-item-active {
+                background-color: #00D6EA;
+            }
+            .ant-pagination-item-active a,
+            .ant-pagination-item-active:focus a,
+            .ant-pagination-item-active:hover a {
+                color: #000;
+            }
+            .ant-pagination-item-link {
+                background-color: rgba(255, 255, 255, 0)!important;
+                color: #00D6EA!important;
+            }
+        }
+        .dataNav {
+            line-height: 40px;
+            border-bottom: 1px solid #07596C;
+            margin: 0 20px;
+            overflow: hidden;
+        }
+    }
+}
+
+.boxBlockv {
+    width: 575px;
+    height: 300px;
+    background-color: rgba(4, 13, 18, .4);
+    color: #fff;
+    border: 1px solid #035470;
+    margin-bottom: 26px;
+    margin-right: 15px; // margin-left: 3px;
+    margin-left: 69%;
+}

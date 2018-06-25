@@ -1,0 +1,23 @@
+@value colors: '../../styles/colors.css';
+@value borderBlueBright from colors;
+
+.selectedSystem {
+  float: right;
+}
+.system {
+  text-align: center;
+  padding: 7px 18px;
+  float: left;
+  margin-right: 21px;
+  margin-top: 20px;
+  color: #c7c7c7;
+  cursor: pointer;
+}
+.system > i {
+  margin-right: 6px;
+}
+.system:hover {
+  border-radius: 16px;
+  border: 1px solid borderBlueBright;
+  color: #00deff;
+}

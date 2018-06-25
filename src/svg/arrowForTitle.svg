@@ -1,0 +1,15 @@
+<svg
+  width="13"
+  height="14"
+  viewBox="0 0 13 14"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <polyline
+    points="0,0 6,7 0,14"
+    style="fill:none;stroke:#00eaff;stroke-width:2"
+  />
+  <polyline
+    points="6,0 12,7 6,14"
+    style="fill:none;stroke:#00eaff;stroke-width:2"
+  />
+</svg>

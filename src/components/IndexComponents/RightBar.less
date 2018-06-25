@@ -1,0 +1,100 @@
+@value colors: '../styles/colors.css';
+@value borderBlue, backgroundColor, fontColorBlue, borderBlueBright, fontColorWhite, backgroundColorDull from colors;
+
+.container{
+  float: right;
+  position: relative;
+}
+
+.contentContainer{
+  position: absolute;
+  top: 40px;
+  width: 100%;
+}
+
+.contentNav{
+  position: relative;
+  margin: 0 20px;
+  line-height: 30px;
+  border: 1px solid borderBlue;
+  border-radius: 4px;
+}
+
+.contentList{
+  display: inline-block;
+  color: fontColorBlue;
+  text-align: center;
+  i{
+    margin-right: 5px;
+  }
+}
+
+.dataList{
+  display: inline-block;
+  color: fontColorWhite;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  float: left;
+}
+
+.dataNav{
+  line-height: 40px;
+  border-bottom: 1px solid #07596C;
+  margin: 0 20px;
+  overflow: hidden;
+}
+
+.dataNavActive{
+  composes: dataNav;
+  background: -webkit-linear-gradient(left, #051A2B , #0078A5, #051A2B);
+  background: -o-linear-gradient(right, #051A2B , #0078A5, #051A2B);
+  background: -moz-linear-gradient(right, #051A2B , #0078A5, #051A2B);
+  background: linear-gradient(to right, #051A2B , #0078A5, #051A2B);
+}
+
+.borderSmall{
+  border-width: 2px;
+  width: 10px;
+  height: 10px;
+  display: block;
+  position: absolute;
+  border-color: borderBlueBright;
+}
+
+.borderSmallLeftTop{
+  composes:borderSmall;
+  border-left-style: solid;
+  border-top-style: solid;
+  left: 0;
+  top: 0;
+  border-top-left-radius: 4px;
+}
+
+.borderSmallRightTop{
+  composes:borderSmall;
+  border-right-style: solid;
+  border-top-style: solid;
+  right: 0;
+  top: 0;
+  border-top-right-radius: 4px;
+}
+
+.borderSmallLeftBottom{
+  composes:borderSmall;
+  border-left-style: solid;
+  border-bottom-style: solid;
+  left: 0;
+  bottom: 0;
+  border-bottom-left-radius: 4px;
+}
+
+.borderSmallRightBottom{
+  composes:borderSmall;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  right: 0;
+  bottom: 0;
+  border-bottom-right-radius: 4px;
+}

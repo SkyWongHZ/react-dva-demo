@@ -1,0 +1,201 @@
+.ThematicMap-main-container {
+    min-width: 1920px;
+    min-height: 1080px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    .ThematicMap-container {
+        height: 630px;
+        width: 1218px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        .ant-tabs {
+            color: #fff;
+        }
+        .ThematicMap-leftBorder {
+            position: absolute;
+            left: -18px;
+            top: -38px;
+        }
+
+        .ThematicMap-rightBorder {
+            position: absolute;
+            right: -20px;
+            top: -47px;
+        }
+
+        .ThematicMap-main-content {
+            width: 1218px;
+            height: 630px;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            position: relative;
+            z-index: 2;
+            margin-top: 5px;
+            background-image: url(../../../../assets/images/thematicMap-bg.png);
+            &.no-bg {
+                background-image: none;
+            }
+            .filtrateContainer {
+                background-color: transparent;
+                border: 0;
+                padding: 15px 40px 0 40px;
+                .ant-calendar-picker-input,
+                .ant-select-selection--multiple {
+                    background-color: #051A2A;
+                    border-color: #00CCFF;
+                    color: #fff;
+                }
+                .ant-select-selection--multiple {
+                    margin-top: 5px;
+                }
+                .ant-select-selection__choice {
+                    background-color: transparent;
+                    color: #fff;
+                }
+                .ant-select-selection__choice__remove {
+                    color: #fff;
+                }
+                .ant-calendar-range-picker-separator {
+                    color: #fff;
+                }
+                .range-picker {
+                    margin-top: 15px;
+                }
+                .ant-form-item {
+                    display: inline-block;
+                    margin-right: 16px;
+                    margin-bottom: 0;
+                }
+                .ant-form-item-label {
+                    label {
+                        color: #00D1E3;
+                    }
+                }
+                .ant-calendar-picker-icon {
+                    &:after {
+                        color: #00EAFF;
+                    }
+                }
+                .ant-calendar-picker-clear {
+                    background-color: transparent;
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+            }
+            .ThematicMap-tab {
+                background-color: #051B2C;
+                position: absolute;
+                top: -48px;
+                right: 0;
+                .ant-tabs-bar {
+                    border-bottom: 0;
+                    margin-bottom: 0;
+                    .ant-tabs-ink-bar {
+                        height: 0;
+                    }
+                    .ant-tabs-nav {
+                        padding: 0 20px;
+                        &:before {
+                            content: '';
+                            border-left-style: solid;
+                            border-top-style: solid;
+                            left: 0;
+                            top: 0;
+                            border-top-left-radius: 4px;
+                            border-width: 2px;
+                            width: 10px;
+                            height: 10px;
+                            display: block;
+                            position: absolute;
+                            border-color: #11B6D1;
+                        }
+                        &:after {
+                            content: '';
+                            border-right-style: solid;
+                            border-top-style: solid;
+                            right: 0;
+                            top: 0;
+                            border-top-right-radius: 4px;
+                            border-width: 2px;
+                            width: 10px;
+                            height: 10px;
+                            display: block;
+                            position: absolute;
+                            border-color: #11B6D1;
+                        }
+                        .ant-tabs-tab {
+                            margin-right: 0;
+                            font-size: 16px;
+                            padding: 10px 20px;
+                            color: #C1C1C1;
+                            &:hover,
+                            &:active {
+                                color: #00D8FF;
+                            }
+                        }
+                        .ant-tabs-tab-active {
+                            color: #00D8FF;
+                            position: relative;
+                            &:before {
+                                content: "\e61f";
+                                font-family: "iconfont" !important;
+                                font-size: 16px;
+                                font-style: normal;
+                                -webkit-font-smoothing: antialiased;
+                                -moz-osx-font-smoothing: grayscale;
+                                margin-right: 5px;
+                                position: absolute;
+                                left: 0;
+                            }
+                        }
+                    }
+                }
+            }
+            .ThematicMap-closeIcon {
+                color: #00EAFF;
+                position: absolute;
+                top: -85px;
+                right: -25px;
+                font-size: 22px;
+                cursor: pointer;
+            }
+            .cockpitMap {
+                position: absolute;
+                width: 100%;
+                height: 600px;
+            }
+        }
+    }
+}
+
+.pollutant-main-content {
+    height: 100%;
+    .content-col {
+        height: 100%;
+        .pollutant-panel-content {
+            background-color: #051B2C;
+            border: 1px solid #035470;
+            height: 100%;
+        }
+        &:first-child {
+            .pollutant-panel-content {
+                margin-right: 10px;
+            }
+        }
+    }
+    .ant-pagination-options-quick-jumper{
+        color: #fff;
+    }
+    .ant-pagination-jump-next:after{
+        color: #00D6EA;
+    }
+    .ant-pagination-options-quick-jumper input{
+        background-color: #00D5EE;
+        border-color: #00D5EE;
+    }
+}

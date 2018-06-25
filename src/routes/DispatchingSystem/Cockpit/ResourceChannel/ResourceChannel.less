@@ -1,0 +1,80 @@
+.ResourceChannelContainer {
+    width: 575px;
+    height: 300px;
+    background-color: rgba(4, 13, 18, 0.4);
+    color: #fff;
+    border: 1px solid #035470;
+    margin-bottom: 26px;
+    margin-right: 15px;
+    margin-left: 3px;
+    float: left;
+    margin-bottom: 0;
+    
+        margin-right: 0;
+        .box-content {
+            margin-top: 10px;
+            .box-list {
+                position: relative;
+                width: 170px;
+                text-align: center;
+                display: inline-block;
+                margin-bottom: 38px;
+                margin-top: 10px;
+                a {
+                    width: 100%;
+                    display: table;
+                    color: #D0D0D0;
+                    p {
+                        width: 50px;
+                        height: 47px;
+                        border-radius: 16px;
+                        box-shadow: 0 0 10px #D0D0D0;
+                        display: block;
+                        margin: auto;
+                        .iconfont {
+                            text-align: center;
+                            display: block;
+                            font-size: 22px;
+                            padding-top: 10px;
+                        }
+                    }
+                    span {
+                        display: block;
+                        font-size: 13px;
+                        line-height: 20px;
+                        margin-top: 5px;
+                        text-align: center;
+                    }
+                    &:hover {
+                        color: #00DEFF;
+                        p {
+                            box-shadow: 0 0 18px #00DEFF;
+                        }
+                    }
+                }
+                .line {
+                    width: 1px;
+                    height: 20px;
+                    position: absolute;
+                    top: 20px;
+                    right: 0;
+                }
+            }
+            .box-list:nth-child(3) {
+                .line {
+                    display: none;
+                }
+            }
+            .box-list:nth-child(6) {
+                .line {
+                    display: none;
+                }
+            }
+            .box-list:nth-child(9) {
+                .line {
+                    display: none;
+                }
+            }
+        }
+    
+}

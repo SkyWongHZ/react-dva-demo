@@ -1,0 +1,75 @@
+.authority-main-content {
+    .panel-inner {
+        margin-top: 20px;
+        padding: 0 20px 0 20px;
+        width:100%;
+        overflow: auto;
+        .inner-title {
+            position: relative;
+            &:before {
+                content: '1';
+                display: inline-block;
+                background-color: #3996FF;
+                width: 18px;
+                height: 18px;
+                line-height: 18px;
+                text-align: center;
+                color: #fff;
+                border-radius: 50%;
+                position: relative;
+                z-index: 101;
+            }
+
+            &:after {
+                content: '';
+                position: relative;
+                width: 100%;
+                height: 1px;
+                left: 0;
+                top: -22px;
+                display: inline-block;
+                background-color: #3996FF;
+            }
+            >span {
+                padding: 0 8px;
+                background-color: #fff;
+                display: inline-block;
+                position: relative;
+                z-index: 101;
+            }
+        }
+        .inner-content {
+            overflow: auto;
+            position: relative;
+            padding-bottom: 65px;
+        }
+        .submit-button{
+            position: absolute;
+            background-color: #fff;
+            width:485px;
+            bottom:0;
+            right:40px;
+            padding-top: 10px;
+            padding-bottom: 27px;
+            button{
+                margin-right: 10px;
+                background-color: #3996FF;
+                border-color: #3996FF;
+                min-width: 96px;
+                float: right;
+            }
+        }
+        &.second{
+            .inner-title {
+                &:before {
+                    content: '2';
+                }
+            }
+            .inner-content{
+                border-left: 1px solid #DBDBDB;
+                margin-left: 9px;
+                padding-left: 20px;
+            }
+        }
+    }
+}

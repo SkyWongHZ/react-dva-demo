@@ -1,0 +1,92 @@
+@value colors: '../styles/colors.css';
+@value borderBlue, backgroundColor, fontColorBlue, borderBlueBright, fontColorWhite, backgroundColorDull from colors;
+.table {
+  height: 100%;
+  position: relative;
+}
+.contentContainer{
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  height: calc(~'100% - 40px');
+}
+
+.contentNav{
+  position: relative;
+  margin: 0 20px;
+  line-height: 30px;
+  //border: 1px solid borderBlue;
+  border-radius: 4px;
+  box-shadow: 0 0 4px #09c1d8;
+}
+
+.contentList{
+  display: inline-block;
+  color: #0be5ff;
+  text-align: center;
+i{
+  margin-right: 5px;
+}
+}
+
+.dataList{
+  display: inline-block;
+  color: fontColorWhite;
+  text-align: center;
+}
+
+.dataNav{
+  line-height: 40px;
+  border-bottom: 1px solid transparent;
+  border-image: linear-gradient(to right, #032f39, #00adc2, #032f39) 1;
+  margin: 0 20px;
+}
+
+.borderSmall{
+  border-width: 2px;
+  width: 10px;
+  height: 10px;
+  display: block;
+  position: absolute;
+  border-color: borderBlueBright;
+}
+
+.borderSmallLeftTop{
+  composes:borderSmall;
+  border-left-style: solid;
+  border-top-style: solid;
+  left: 0;
+  top: 0;
+  border-top-left-radius: 4px;
+}
+
+.borderSmallRightTop{
+  composes:borderSmall;
+  border-right-style: solid;
+  border-top-style: solid;
+  right: 0;
+  top: 0;
+  border-top-right-radius: 4px;
+}
+
+.borderSmallLeftBottom{
+  composes:borderSmall;
+  border-left-style: solid;
+  border-bottom-style: solid;
+  left: 0;
+  bottom: 0;
+  border-bottom-left-radius: 4px;
+}
+
+.borderSmallRightBottom{
+  composes:borderSmall;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  right: 0;
+  bottom: 0;
+  border-bottom-right-radius: 4px;
+}
+.body {
+  overflow: auto;
+  height: calc(~'100% - 30px');;
+}
